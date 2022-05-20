@@ -14,7 +14,7 @@ To use single-database tenancy, make sure you disable the `DatabaseTenancyBootst
 
 You can still use the other [tenancy bootstrappers]({{ $page->link('tenancy-bootstrappers') }}) to separate tenant caches, filesystems, etc.
 
-Also make sure you have disabled the database creation jobs (`CreateDatabase`, `MigrateDatabase`, `SeedDatabase` ...) from listening to the `TenantCreated` event.
+Also make sure you have disabled the database creation jobs (`CreateDatabase`, `MigrateDatabase`, `SeedDatabase` ...) from listening to the `TenantCreated` event within your `TenancyServiceProvider`.
 
 # Concepts {#concepts}
 
